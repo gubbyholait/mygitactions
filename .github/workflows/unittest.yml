@@ -1,16 +1,17 @@
-name: Testing Code
+name: Hello World
 
 on:
-  push:
+  push: 
    branches:
     - 'main'
   pull_request:
-   branches:
-    - 'main'
+    branches:
+     - 'main'
+
 jobs:
-  unittests:
+  unittest:
    runs-on: ubuntu-latest
-   
+
    steps:
     - name: Hello Step
-      run: "Echo World"
+      run: echo "Hello World"
